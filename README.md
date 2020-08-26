@@ -4,17 +4,14 @@
 
 This is the front-end REPO for Team-185-Group-A. 
 
-
 ## Authors 
-
-   - **[Prince Musole](https://github.com/pmusole2)**
-   - **[Fred Nyakagwa](https://github.com/nyakagwafred)**
+- **[Prince Musole](https://github.com/pmusole2)**
+- **[Fred Nyakagwa](https://github.com/nyakagwafred)**
    
   
 
 ## Contributing
 
-If this project sounds interesting to you and you'd like to contribute, thank you! First, you can send a mail to buildforsdg@andela.com to indicate your interest, why you'd like to support and what forms of support you can bring to the table, but here are areas we think we'd need the most help in this project :
 
 ## License
 
@@ -26,4 +23,3 @@ This project is licensed under the MIT License
 -   Andela Learning Community
 -   Facebook
 -   Open Classrooms
-
