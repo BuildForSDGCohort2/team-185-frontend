@@ -7,9 +7,8 @@ This is the front-end REPO for Team-185-Group-A.
 ## Authors 
 - **[Prince Musole](https://github.com/pmusole2)**
 - **[Fred Nyakagwa](https://github.com/nyakagwafred)**
+- **[Joseph](https://github.com/mwaoh)**
    
-  
-
 ## Contributing
 
 
