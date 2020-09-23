@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+.remove-btn {
+  margin-left: 1.0rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 3000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01; 
+  transition: opacity 3000ms ease-in;
+}
+
+=======
+>>>>>>> 53f6151a96d085729cff494b15bf683620e47d6c
 .App {
   text-align: center;
 }
@@ -24,6 +50,16 @@
   color: white;
 }
 
+<<<<<<< HEAD
+.App-Centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+=======
+>>>>>>> 53f6151a96d085729cff494b15bf683620e47d6c
 .App-link {
   color: #61dafb;
 }
