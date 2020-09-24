@@ -33,6 +33,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "devServer": {
+    "publicPath": "/public"
+  },
+  
   "browserslist": {
     "production": [
       ">0.2%",
