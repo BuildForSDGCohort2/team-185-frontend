@@ -4,7 +4,7 @@ import {GET_EXPENSE_ITEMS, GET_EXPENSE_AMOUNT_ITEMS, ADD_EXPENSE_ITEM, DELETE_EX
 export const getExpenseItems = () => dispatch => {
     dispatch(setExpenseItemsLoading());
     axios
-        .get('/expense_items')
+        .get('https://team-185-backend.herokuapp.com/api/expense_items')
         .then(res => dispatch({
             type: GET_EXPENSE_ITEMS,
             payload: res.data
@@ -14,7 +14,7 @@ export const getExpenseItems = () => dispatch => {
 
 export const addExpenseItem = expense_item =>dispatch => {
     axios
-        .post('/expense_items', expense_item)
+        .post('https://team-185-backend.herokuapp.com/api/expense_items', expense_item)
         .then(res => dispatch({
             type: ADD_EXPENSE_ITEM,
             payload: res.data
@@ -23,7 +23,7 @@ export const addExpenseItem = expense_item =>dispatch => {
 
 export const deleteExpenseItem = (id) => dispatch=> {
    axios
-    .delete(`/expense_items/${id}`)
+    .delete(`https://team-185-backend.herokuapp.com/api/expense_items/${id}`)
     .then(res => dispatch ({
         type: DELETE_EXPENSE_ITEM,
         payload: id
@@ -39,7 +39,7 @@ export const setExpenseItemsLoading = () => {
 export const getExpenseAmountItems = () => dispatch => {
     dispatch(setExpenseItemsLoading());
     axios
-        .get('/expense_items')
+        .get('https://team-185-backend.herokuapp.com/api/expense_items')
         .then(res => dispatch({
             type: GET_EXPENSE_AMOUNT_ITEMS,
             payload: res.data
