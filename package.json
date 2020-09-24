@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.5",
     "material-ui": "^0.20.2",
     "react": "^16.13.1",
@@ -25,7 +26,7 @@
     "npm": "6.14.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,10 +34,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "devServer": {
-    "publicPath": "/public"
-  },
-  
   "browserslist": {
     "production": [
       ">0.2%",

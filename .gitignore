@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 /node_modules
 .idea/# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
->>>>>>> 53f6151a96d085729cff494b15bf683620e47d6c
 
 # dependencies
 /node_modules
@@ -14,7 +10,7 @@
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store
