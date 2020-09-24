@@ -21,7 +21,7 @@
   },
 
   "engines" :{
-    "node": "^2.0.4"
+    "node": "12.18.3"
   },
   "scripts": {
     "start": "react-scripts start",
