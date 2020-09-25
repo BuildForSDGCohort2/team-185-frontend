@@ -6,7 +6,7 @@ This is the front-end REPO for Team-185-Group-A. Powered by ReactJS, Redux, Axio
 
 ## Authors
 
-- **[Prince Musole - FullStack Developer](https://github.com/pmusole2)**
+- **[Prince Musole - Fullstack Developer](https://github.com/pmusole2)**
 - **[Fred Nyakagwa - Technical Team Lead](https://github.com/nyakagwafred)**
 - **[Joseph Mwaura](https://github.com/mwaoh)**
 - **[Felix Mutua - Backend Developer](https://github.com/felixmutua)**
