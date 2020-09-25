@@ -5,7 +5,7 @@ import {Container, ListGroup, ListGroupItem, Button, Modal, Row, Col, Badge} fro
 export default class IncomeSummary extends Component {
     render() {
         return (
-            <Container style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+            <Container style={{ display: 'flex', marginTop: '1rem', marginBottom: '1rem', justifyContent:'center', alignItems:'center'}}>
                  <hr color="success"></hr>
                 <Row>
                     <Col xs="6" sm="4"><h3><Badge color="success">{'Monthly : $$$'}</Badge></h3></Col>
