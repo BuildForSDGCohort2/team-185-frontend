@@ -20,7 +20,7 @@ class ExpenseSummary extends Component {
 
 
         return (
-            <Container>
+            <Container style={{ display: 'flex', marginTop: '1rem', marginBottom: '1rem', justifyContent:'center', alignItems:'center'}} >
                  <hr color="dark"></hr>
                 <Row style={{ marginTop: '1rem', marginBottom: '1rem'}}>
                     <Col xs="6" sm="4"><h3><Badge color="dark">{'This Month : $$$'}</Badge></h3></Col>
