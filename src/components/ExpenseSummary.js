@@ -3,19 +3,16 @@ import {Container, ListGroup, ListItem, ListGroupItem, Button, Modal, Row, Col, 
 import { getExpenseItems} from '../actions/expenseActions';
 import { connect} from 'react-redux';
 import PropTypes  from 'prop-types';
-import { ContentFlag } from 'material-ui/svg-icons';
-
 class ExpenseSummary extends Component {
 
     componentDidMount() {
         this.props.getExpenseItems();
     }
-
-    
+ 
     render() {
         let allExpenseItemAmount = []
         const {expense_items} = this.props.expense_item;
-        const makeArray = expense_items.forEach(amount => allExpenseItemAmount.push(amount.amount))
+        const allExpenseItemAmount = expense_items.forEach(amount => allExpenseItemAmount.push(amount.amount))
         const totalExpenseItemsAmounts = allExpenseItemAmount.reduce((total, expenseItemAmount) => total + expenseItemAmount, 0)
         
         return (
