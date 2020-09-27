@@ -11,7 +11,7 @@ import {
 } from 'reactstrap';
 import PropTypes  from 'prop-types';
 import {connect} from 'react-redux';
-import {addExpenseItem} from '../actions/expenseActions';
+import {addExpenseItem} from '../../actions/expenseActions';
 
 class ExpenseItemModal extends Component {
 
@@ -28,25 +28,24 @@ class ExpenseItemModal extends Component {
   };
 
 
-    handleExpenseItemChange = (e) => {
-      this.setState({
-        description : e.target.value
-    })};
+  handleExpenseItemChange = (e) => {
+    this.setState({
+      description : e.target.value
+  })};
 
-    handleExpenseAmountChange = (e) => {
-      this.setState({
-        amount : e.target.value
-      })}
+  handleExpenseAmountChange = (e) => {
+    this.setState({
+      amount : e.target.value
+  })}
 
-   onSubmit = e => {
+  onSubmit = e => {
     e.preventDefault();
     const expense_item = {
       description: this.state.description,
       amount: this.state.amount
     };
     this.props.addExpenseItem(expense_item);
-    this.toggle();
-  }
+  this.toggle();}
 
   
   render() {

@@ -3,22 +3,23 @@ import {Container, ListGroup, ListItem, ListGroupItem, Button, Modal, Row, Col, 
 import { getExpenseItems} from '../actions/expenseActions';
 import { connect} from 'react-redux';
 import PropTypes  from 'prop-types';
-class ExpenseSummary extends Component {
+import { ContentFlag } from 'material-ui/svg-icons';
 
+class ExpenseSummary extends Component {
     componentDidMount() {
         this.props.getExpenseItems();
     }
- 
+  
     render() {
         let allExpenseItemAmount = []
         const {expense_items} = this.props.expense_item;
-        const allExpenseItemAmount = expense_items.forEach(amount => allExpenseItemAmount.push(amount.amount))
+        const makeArray = expense_items.forEach(amount => allExpenseItemAmount.push(amount.amount))
         const totalExpenseItemsAmounts = allExpenseItemAmount.reduce((total, expenseItemAmount) => total + expenseItemAmount, 0)
-        
+
         return (
-            <Container style={{ display: 'flex', marginTop: '1rem', marginBottom: '1rem', justifyContent:'center', alignItems:'center'}} >
+            <Container style={{ display: 'flex', marginTop: '1rem', marginBottom: '1rem', justifyContent:'center', alignItems:'center'}}>
                  <hr color="dark"></hr>
-                <Row>
+                <Row style={{ marginTop: '1rem', marginBottom: '1rem'}}>
                     <Col xs="6" sm="4"><h3><Badge color="dark">{'This Month : $$$'}</Badge></h3></Col>
                     <Col xs="6" sm="4"><h3><Badge color="dark">{'This Week : $$$'}</Badge></h3></Col>
                     <Col sm="4"><h3><Badge color="dark">{`Today: ${totalExpenseItemsAmounts}.00`}</Badge></h3></Col>

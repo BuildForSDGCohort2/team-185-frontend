@@ -6,8 +6,8 @@ import Expense from './components/Expense.js';
 import Footer from './components/Footer.js'
 import Income from './components/Income'
 import Menu from './components/Menu';
-import ExpenseItemModal from './components/ExpenseItemModal';
-import IncomeItemModal from './components/IncomeItemModal';
+import ExpenseItemModal from './components/Modals/ExpenseItemModal';
+import IncomeItemModal from './components/Modals/IncomeItemModal';
 import './App.css';
 import ExpenseSummary from './components/ExpenseSummary';
 import IncomeSummary from './components/IncomeSummary.js';

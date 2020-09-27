@@ -11,7 +11,7 @@ import {
 } from 'reactstrap'
 import PropTypes  from 'prop-types';
 import {connect} from 'react-redux';
-import {addIncomeItem} from '../actions/incomeActions';
+import {addIncomeItem} from '../../actions/incomeActions';
 
 
 class IncomeItemModal extends Component {
