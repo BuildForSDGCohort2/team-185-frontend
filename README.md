@@ -4,9 +4,10 @@
 
 This is the front-end REPO for Team-185-Group-A. 
 
-## Authors 
-- **[Prince Musole](https://github.com/pmusole2)**
-- **[Fred Nyakagwa](https://github.com/nyakagwafred)**
+## Authors
+
+- **[Prince Musole - Fullstack Developer](https://github.com/pmusole2)**
+- **[Fred Nyakagwa - Technical Team Lead](https://github.com/nyakagwafred)**
 - **[Joseph Mwaura](https://github.com/mwaoh)**
 - **[Felix Mutua](https://github.com/felixmutua)**
 - **[Bryson Nyamwange](https://github.com/brysonwaisi)**

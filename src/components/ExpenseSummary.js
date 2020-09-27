@@ -17,12 +17,11 @@ class ExpenseSummary extends Component {
         const {expense_items} = this.props.expense_item;
         const makeArray = expense_items.forEach(amount => allExpenseItemAmount.push(amount.amount))
         const totalExpenseItemsAmounts = allExpenseItemAmount.reduce((total, expenseItemAmount) => total + expenseItemAmount, 0)
-
-
+        
         return (
-            <Container>
+            <Container style={{ display: 'flex', marginTop: '1rem', marginBottom: '1rem', justifyContent:'center', alignItems:'center'}} >
                  <hr color="dark"></hr>
-                <Row style={{ marginTop: '1rem', marginBottom: '1rem'}}>
+                <Row>
                     <Col xs="6" sm="4"><h3><Badge color="dark">{'This Month : $$$'}</Badge></h3></Col>
                     <Col xs="6" sm="4"><h3><Badge color="dark">{'This Week : $$$'}</Badge></h3></Col>
                     <Col sm="4"><h3><Badge color="dark">{`Today: ${totalExpenseItemsAmounts}.00`}</Badge></h3></Col>
