@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,UncontrolledDropdown,DropdownToggle,DropdownMenu,DropdownItem,NavbarText,Container} from 'reactstrap';
+import RegisterModal from './Modals/RegisterModal';
+import LoginModal from './Modals/LoginModal';
+import FAQsModal from './Modals/FAQsModal';
 
 export class AppNavBar extends Component {
     state = {
@@ -18,27 +21,31 @@ export class AppNavBar extends Component {
             <Container>
                 <Navbar color="dark" dark expand="sm" className="mb-2">
                     <Container>
-                        <NavbarBrand> Budger APP - <i>Spend, Track and <span style={{ backgroundColor: 'success' }}>Solidify</span></i></NavbarBrand>
+                        <NavbarBrand>Budger APP</NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
                                 <NavItem>
                                     <NavLink href="#">
-                                        Register
+                                        <RegisterModal />
                                     </NavLink>
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink href="#">
-                                        Login
+                                    <NavLink>
+                                        <LoginModal />
                                     </NavLink>
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink href="#">
-                                        FAQs
+                                    <NavLink>
+                                        <FAQsModal />
                                     </NavLink>
                                 </NavItem>
+
+                            
+
+                               
                             </Nav>
                         </Collapse>
                     </Container>

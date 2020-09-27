@@ -90,10 +90,10 @@ class IncomeItemModal extends Component {
                   </Input>
 
                   <Button 
-                    color='dark' 
+                    color='success' 
                     style={{ marginTop: '2rem' }} 
                     block>
-                      Add Expense
+                      Add Income
                   </Button>
               </FormGroup>
               
